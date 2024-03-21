@@ -1,3 +1,5 @@
+import styles from "./Profile.module.css";
+
 const Profile = ({
   name,
   tag,
@@ -6,26 +8,32 @@ const Profile = ({
   stats: { followers, views, likes },
 }) => {
   return (
-    <div>
-      <div>
-        <img src={image} alt={name} />
-        <p>{name}</p>
-        <p>@{tag}</p>
-        <p>{location}</p>
+    <div className={styles.profileContainer}>
+      <div className={styles.userContainer}>
+        <img
+          className={styles.userImg}
+          src={image}
+          alt={name}
+          width={200}
+          height={200}
+        />
+        <p className={styles.userName}>{name}</p>
+        <p className={styles.userInfo}>@{tag}</p>
+        <p className={styles.userInfo}>{location}</p>
       </div>
 
-      <ul>
-        <li>
+      <ul className={styles.userStatisticList}>
+        <li className={styles.userStatisticItem}>
           <span>Followers</span>
-          <span>{followers}</span>
+          <span className={styles.userStatisticValue}>{followers}</span>
         </li>
-        <li>
+        <li className={styles.userStatisticItem}>
           <span>Views</span>
-          <span>2{views}</span>
+          <span className={styles.userStatisticValue}>2{views}</span>
         </li>
-        <li>
+        <li className={styles.userStatisticItem}>
           <span>Likes</span>
-          <span>{likes}</span>
+          <span className={styles.userStatisticValue}>{likes}</span>
         </li>
       </ul>
     </div>

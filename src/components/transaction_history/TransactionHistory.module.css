@@ -1,0 +1,22 @@
+.transactionTable {
+  border-collapse: collapse;
+  width: 600px;
+  margin-bottom: 20px;
+}
+
+.transactionTitle {
+  background-color: black;
+  color: white;
+  padding: 8px;
+  border: 1px solid black;
+}
+
+.transactionItem:nth-child(odd) {
+  background-color: #ded3d3;
+}
+
+.transactionText {
+  text-align: center;
+  border: 1px solid black;
+  padding: 8px;
+}

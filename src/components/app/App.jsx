@@ -4,10 +4,11 @@ import FriendList from "../friend_list/FriendList";
 import friends from "../../json/friends.json";
 import TransactionHistory from "../transaction_history/TransactionHistory";
 import transactions from "../../json/transactions.json";
+import styles from "./App.module.css"
 
 const App = () => {
   return (
-    <section>
+    <main className={styles.mainContainer}>
       <Profile
         name={userData.username}
         tag={userData.tag}
@@ -17,7 +18,7 @@ const App = () => {
       />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
-    </section>
+    </main>
   );
 };
 

@@ -1,0 +1,50 @@
+.profileContainer {
+  border: 1px solid black;
+  border-radius: 8px;
+  margin-top: 20px;
+  background-color: rgb(255, 245, 223);
+}
+
+.userContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 40px;
+}
+
+.userImg {
+  background-color: black;
+  border-radius: 50%;
+}
+
+.userName {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.userInfo {
+  color: rgb(171, 189, 189);
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.userStatisticList {
+  display: flex;
+  background-color: rgb(151, 137, 109);
+}
+
+.userStatisticItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  border: 1px solid black;
+  padding: 20px 10px;
+  font-size: 24px;
+}
+
+.userStatisticValue {
+    font-weight: 700;
+}

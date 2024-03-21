@@ -1,0 +1,21 @@
+.friendsItemContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.friendsItemText {
+  font-weight: 700;
+}
+
+.friendsItemStatus {
+  color: rgb(183, 32, 32);
+}
+
+.friendsItemStatusOnline {
+  color: rgb(75, 191, 36);
+}
